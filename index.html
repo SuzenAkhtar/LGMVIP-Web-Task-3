@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form id="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="rollNumber">Roll Number:</label>
+        <input type="rollNumber" id="rollNumber" name="rollNumber"><br><br>
+        <label for="collegeName">College Name:</label>
+        <input type="text" id="collegeName" name="collegeName"><br><br>
+        <label for="gender">Gender:</label>
+        <div class="gender-options">
+        <input type="checkbox" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="checkbox" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="checkbox" id="other" name="gender" value="other">
+        <label for="other">Other</label> 
+        </div>
+        <br><br>
+        <label for="skills">Skills:</label>
+        <input type="skills" id="skills" name="skills"><br><br>
+        <label for="image-link">Image Link:</label>
+        
+        <input type="url" id="image-link" name="image-link"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password"><br><br>
+        <input type="submit" value="Register">
+    </form>
+    <div id="registered-students"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
